@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    font-family: Nunito;
+}
+
+.ticket-page {
+  margin: 15px;
+}
+
+.ticket-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    margin: 30px;
+  }
+  
+  .card {
+    width: 350px;
+    background: linear-gradient(to bottom, #030E6A, #3C52E7);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    color:#F2F2F2
+  }
+  
+  .card-header {
+    padding: 20px;
+    border-bottom: 1px solid #F2F2F2;
+    margin-right: 10px;
+    height: 30px;
+  }
+  
+  .input-title {
+    width: 100%;
+    padding: 6px;
+    border: none;
+    border-bottom: 1px solid #F2F2F2;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .card-body {
+    padding: 20px;
+    margin-right: 10px;
+    height: 250px;
+
+  }
+  
+  .input-description,
+  .input-activities {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .input-description {
+    height: 100px;
+  }
+  
+  .input-activities {
+    height: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  .input-icon {
+    color: #F2F2F2;
+  }
+
+  .paragraph {
+    margin-top: 13px;
+  }
+
+  .bold {
+    font-weight: bolder;
+    font-size: 1.1em;
+  }
+
+  .back-link {
+    text-decoration: none;
+    color: #090f34;
+    padding: 35px;
+    font-size: 20px;
+  }
+  

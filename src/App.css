@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+:root {
+    --main-font: "Nunito", sans-serif;
+    --headings-font: "Ephesis", sans-serif;
+    --color1: #22223b;
+    --color2: #4a4e69;
+    --color3: #9a8c98;
+    --color4: #c9ada7;
+    --color5: #f2e9e4;
+}

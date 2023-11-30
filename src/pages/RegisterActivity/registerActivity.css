@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+
+.h1-title {
+    color: var(--color2);
+    font-family: var(--main-font);
+}
+.register-activity-form {
+    display: flex;
+    flex-direction: column;
+    font-family: Nunito;
+    margin: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--color5);
+    padding: 70px;
+    border-radius: 40px;
+    color: var(--color2);
+    font-weight: 700;
+}
+
+.form-first-column {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    max-height: 250px;
+    flex-wrap: wrap;
+}
+
+.form-item {
+    margin-top: 20px;
+}
+
+#input-t, .txtarea-desc {
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #a8aee1;
+}
+
+.txtarea-desc {
+    width: -webkit-fill-available;
+    height: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 100%;
+    box-shadow: 20px 20px 60px grey;
+}
+
+.radio-btn-prior,
+.radio-btn-help {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.label-mrg {
+    margin-bottom: 20px;
+}
+
+.btn-submit {
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #3C52E7;
+    color: #f2f2f2;
+    font-weight: 700;
+    font-size: larger;
+    box-shadow: 10px 10px 30px grey;
+}
+
+#screen-img {
+    width: 200px;
+}
+
+.h3-text {
+    font-weight: 100;
+}

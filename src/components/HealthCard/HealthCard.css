@@ -1,0 +1,26 @@
+.status-select {
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 8px;
+    font-size: 14px;
+    color: var(--color1);
+    background-color: var(--color4);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .date-and-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+ .status-select:focus {
+    outline: none;
+  }
+
+  .link-text {
+    padding-left: 35%;
+  }

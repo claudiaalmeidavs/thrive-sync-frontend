@@ -27,8 +27,7 @@ export default function RegisterActivity () {
      e.preventDefault();
     axios
       .post("http://localhost:5000/activities", formData)
-      .then((response) => {
-        console.log(response);
+      .then(() => {
         navigate("/profile");
       })
 

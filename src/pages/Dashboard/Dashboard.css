@@ -9,8 +9,11 @@
 
   .dashboard-heading {
     font-family: var(--main-font);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 35px;
+    color: var(--color2);
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   
   .status-headings {
@@ -30,29 +33,19 @@
   }
   
 #to-do {
-    background-color: #DE0042;
-    color: white;
+    background-color: #72394a;
+    color: var(--color5);
 }
 
 #in-progress {
-    background-color: #3C52E7;
-    color: white;
+    background-color: #2b325e;
+    color: var(--color5);
 }
 
 #done {
-    background-color: #2c7428;
-    color: white; 
+    background-color: #2f5c2c;
+    color: var(--color5); 
 }
-
-  .card-container {
-    font-family: "Nunito";
-    width: 300px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: var(--color4);
-    border-radius: 5px;
-    box-shadow: 0 4px 6px var(--color3);
-  }
 
   .cards-container {
     display: flex;
@@ -61,6 +54,7 @@
   .to-do-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 10px;
     padding: 10px 20px;
   }
@@ -70,6 +64,7 @@
     flex-direction: column;
     margin: 10px;
     padding: 10px 20px;
+    align-items: center;
   }
 
   .done-container {
@@ -77,6 +72,7 @@
     flex-direction: column;
     margin: 10px;
     padding: 10px 20px;
+    align-items: center;
   }
 
   .card-container .card-heading {
@@ -92,9 +88,9 @@
   
   .see-activity-link {
     text-decoration: none;
-    color: var(--color1);
+    color: var(--color2);
   }
 
   .see-activity-link:visited {
-    color: var(--color2);
+    color: var(--color3);
   }

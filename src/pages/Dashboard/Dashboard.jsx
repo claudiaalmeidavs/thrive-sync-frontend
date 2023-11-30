@@ -4,12 +4,13 @@ import { useState, useEffect } from "react";
 import "./Dashboard.css"
 
 export default function Dashboard () {
+
     // fetch data from database
     const [activities, setActivities] = useState([]);
     const fetchActivities = () => {
       axios.get("http://localhost:5000/activities/")
       .then((response) => {
-          console.log(response.data)
+          // console.log(response.data)
           setActivities(response.data)
       })
     }
@@ -36,28 +37,28 @@ export default function Dashboard () {
     
 
     // to fetch the activities in the columns
-    const todoActivities = activities.filter(activity => activity.activity_status === 'To Do');
-    const inProgressActivities = activities.filter(activity => activity.activity_status === 'In Progress');
-    const doneActivities = activities.filter(activity => activity.activity_status === 'Done');
+    const todoActivities = activities.filter(activity => activity.activity_status === "Not started");
+    const inProgressActivities = activities.filter(activity => activity.activity_status === "A new habit");
+    const doneActivities = activities.filter(activity => activity.activity_status === "Implemented");
 
     return (
         <div className="dashboard-container">
-            <h2 className="dashboard-heading">Dashboard</h2>
+            <h2 className="dashboard-heading">My health habits</h2>
             <div className="cards-container">
                 <div className="to-do-container">
-                    <h2 className="status-heading" id="to-do">To do</h2>
+                    <h2 className="status-heading" id="to-do">Not started</h2>
                     {todoActivities.map((activity) => (
                     <HealthCard key={activity.id} activity={activity} activityId={activity.id} updateStatus={updateActivityStatus}/>
                         ))}
                 </div>
                 <div className="in-progress-container">
-                    <h2 className="status-heading" id="in-progress">In progress</h2>
+                    <h2 className="status-heading" id="in-progress">A new habit</h2>
                     {inProgressActivities.map((activity) => (
                     <HealthCard key={activity.id} activity={activity} activityId={activity.id} updateStatus={updateActivityStatus}/>
                         ))}
                 </div>
                 <div className="done-container">
-                    <h2 className="status-heading" id="done">Done</h2>
+                    <h2 className="status-heading" id="done">Implemented</h2>
                     {doneActivities.map((activity) => (
                     <HealthCard key={activity.id} activity={activity} activityId={activity.id} updateStatus={updateActivityStatus}/>
                         ))}

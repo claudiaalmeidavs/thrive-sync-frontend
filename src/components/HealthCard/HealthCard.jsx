@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "./HealthCard.css"
 
-
 export default function HealthCard ({activity, activityId, updateStatus}) {
   const handleChange = (event) => {
     const newStatus = event.target.value;

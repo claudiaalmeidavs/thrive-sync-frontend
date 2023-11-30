@@ -14,8 +14,6 @@ export default function RegisterActivity () {
     activity_description: "",
  });
   
-  const [imageFile, setImageFile] = useState();
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -23,13 +21,6 @@ export default function RegisterActivity () {
       [name]: value,
     }));
   };
-
-  const handleImageChange = (e) => {
-   
-    const file = e.target.files[0];
-    //  console.log(file)
-    setImageFile(file);
-};
 
 
   const handleSubmit = (e) => {
@@ -45,18 +36,28 @@ export default function RegisterActivity () {
   };
 
     return (
-    <div className="register-activity-container">
+    <div className="register-activity-outer-container">
+    <div className="register-activity-inner-container">
       <form className="register-activity-form" onSubmit={handleSubmit}>
         <h1 className="h1-title">Register a new activity</h1>
-        <div className="form-first-column">
-          <label className="form-item" htmlFor="username">Username</label>
-          <h3 className="h3-text">John Doe</h3>
-          <label  htmlFor="email">Email</label>
-          <h3 className="h3-text">JohnDoe@email.com</h3>
-          <label className="form-item" htmlFor="title">Title</label>
-          <textarea type="text" className='txtarea-small' name="activity_title" value={formData.activity_title}
-          onChange={handleChange} />
-          <label className="form-item" htmlFor="priority">Priority</label>
+          <div className="username">
+            <div className="username-first-line">
+              <label className="form-item" htmlFor="username">Username</label>
+              <h3 className="h3-text">John Doe</h3>
+            </div>
+            <div className="username-second-line">
+              <label  htmlFor="email">Email</label>
+              <h3 className="h3-text">JohnDoe@email.com</h3>
+            </div>
+          </div>
+          <div className="form-section-title">
+            <label className="form-item form-section-heading" htmlFor="title">I want to...</label>
+            <textarea type="text" className="txtarea-title" name="activity_title" value={formData.activity_title}
+            onChange={handleChange} />
+          </div>
+          <div className="form-first-section">  
+          <div className="priority-section">
+          <label className="form-item form-section-heading" htmlFor="priority">Priority</label>
           <label htmlFor="high">
             <input type="radio" name="activity_priority" value="High" checked={formData.activity_priority === 'High'}
             onChange={handleChange} />High priority
@@ -69,7 +70,9 @@ export default function RegisterActivity () {
             <input type="radio" name="activity_priority" value="Low" checked={formData.activity_priority === 'Low'}
              onChange={handleChange} />Low priority
           </label> 
-          <label className="form-item" htmlFor="desc">What do you want to achieve?</label>
+          </div>
+          <div className="form-goals-section">
+          <label className="form-item form-section-heading" htmlFor="desc">What's your general goal?</label>
           <label htmlFor="">
             <input
               type="radio"
@@ -95,16 +98,15 @@ export default function RegisterActivity () {
             onChange={handleChange}/>Sleeping
           </label>
         </div>
-          <label htmlFor="desc">Describe your new activity</label>
-          <textarea type="text" className='txtarea-desc' name="activity_description" value={formData.activity_description}
+        </div>
+        <div className="activity-description-section">
+          <label className="form-section-heading" htmlFor="desc">Describe your new activity</label>
+          <textarea type="text" className="txtarea-desc" name="activity_description" value={formData.activity_description}
           onChange={handleChange} />
-          <label htmlFor="desc">Upload the Screenshot</label>
-          <div id='screenshot'>
-            <input type="file" onChange={handleImageChange} />
-              {imageFile && <img id="screen-img" src={URL.createObjectURL(imageFile)} alt="Selected" />}
-            </div>
-            <button className="btn-submit">Submit</button>
+        </div>
+        <button className="btn-submit">Submit</button>
       </form>
+    </div>
     </div>
     )
 }

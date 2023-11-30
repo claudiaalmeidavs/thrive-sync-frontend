@@ -92,3 +92,8 @@
   .see-activity-link:visited {
     color: var(--color3);
   }
+
+  .no-activities-message {
+    font-family: var(--main-font);
+    color: var(--color3);
+  }

@@ -21,7 +21,7 @@ export default function ActivityPage () {
 
   return (
     <div className="ticket-page">
-    <p><Link to="/tickets"className="back-link">Back</Link></p>
+    <p><Link to="/profile"className="back-link">Back</Link></p>
     <h1>Activity Page</h1>
     <div className="ticket-page-container">
       {activity.id ? (

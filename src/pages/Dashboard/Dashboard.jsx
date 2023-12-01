@@ -11,8 +11,7 @@ export default function Dashboard () {
     const fetchActivities = () => {
       axios.get("http://localhost:5000/activities/")
       .then((response) => {
-          // console.log(response.data)
-          setActivities(response.data)
+      setActivities(response.data)
       })
       .catch((error) => {
         console.error("Error fetching activities:", error);
@@ -28,7 +27,6 @@ export default function Dashboard () {
           axios
             .put(`http://localhost:5000/activities/${activityId}`, { activity_status: newStatus })
             .then((response) => {
-              // console.log(response);
               const updatedActivities = activities.map((activity) => {
                 if (activity.id === activityId) {
                   return { ...activity, activity_status: newStatus };
@@ -41,7 +39,7 @@ export default function Dashboard () {
         };
     
 
-    // to fetch the activities in the columns
+    // to fetch the activities in the columns according to status
     const todoActivities = activities.filter(activity => activity.activity_status === "Not started");
     const inProgressActivities = activities.filter(activity => activity.activity_status === "A new habit");
     const doneActivities = activities.filter(activity => activity.activity_status === "Implemented");
@@ -68,8 +66,7 @@ export default function Dashboard () {
                     <HealthCard key={activity.id} activity={activity} activityId={activity.id} updateStatus={updateActivityStatus}/>
                         ))}
                         </div>
-                </div>) : <div className="no-activities-message">No activities registered. <Link to="/" className="no-activities-message">Create new.</Link></div>}
-                
+                </div>) : <div className="no-activities-message">No activities registered. <Link to="/" className="no-activities-message">Create new.</Link></div>}                
         </div>
     )
 }

@@ -67,6 +67,7 @@
     font-family: var(--main-font);
     font-size: 14px;
     align-self: flex-end;
+    cursor: pointer;
   }
 
   .delete-button:hover {

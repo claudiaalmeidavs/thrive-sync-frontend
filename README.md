@@ -2,6 +2,8 @@
 
 This repository is the frontend of Thrive Sync, an personal health app that helps users to create new healthy habits and track their progress.
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ## Main features
 
 ### Register new activity
@@ -22,12 +24,15 @@ Users can delete entries in the activity details page.
 
 ## Getting started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Follow these steps to run the Curiobloc backend server:
+    1. Clone the repository into your local machine by running git clone https://github.com/claudiaalmeidavs/thrive-sync-frontend.git
+    2. Navigate to the project directory by entering the command "cd your-project-folder"
+    3. Run "npm install" in the project directory to install all the necessary packages and dependencies.
+    4. Run the command "npm start" to start the development server
 
 ### npm start
 
-To get started, run the command "npm start", alongside with the backend server.
-The command runs the app in the development mode.
+To run the app in the development mode, run the command "npm start", alongside with the backend server.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Authors

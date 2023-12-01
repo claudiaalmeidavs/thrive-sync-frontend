@@ -24,7 +24,7 @@ Users can delete entries in the activity details page.
 
 ## Getting started
 
-Follow these steps to run the Curiobloc backend server:
+Follow these steps to run the Thrive Sync app:
     1. Clone the repository into your local machine by running git clone https://github.com/claudiaalmeidavs/thrive-sync-frontend.git
     2. Navigate to the project directory by entering the command "cd your-project-folder"
     3. Run "npm install" in the project directory to install all the necessary packages and dependencies.

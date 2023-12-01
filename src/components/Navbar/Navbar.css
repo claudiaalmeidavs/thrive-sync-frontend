@@ -5,28 +5,32 @@
     align-items: center;
     justify-content: space-between;
     background-color: var(--color5);
+    max-height: 150px;
   }
 
 .logo-navbar {
-    height: 150px;
+    max-height: 100px;
+    padding: 15px;
 }
 
 .heading-title {
     font-family: var(--headings-font);
-    font-size: 50px;
+    font-size: 45px;
     color: var(--color1);
+    padding: none;
 }
 
 .subtitle-p {
     color: var(--color1);
     font-family: var(--main-font);
+    align-self: flex-end;
+    padding: 15px;
 }
 
 .navbar-list {
     display: flex;
     padding-right: 10%;
     list-style-type: none;
-    padding-bottom: 12px;
 }
 
 .navbar-item {
@@ -43,5 +47,12 @@
     background-color: var(--color2);
     color: var(--color5);
     padding-top: 53px;
-    padding-bottom: 85px;
+    padding-bottom: 65px;
   }
+
+.app-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 150px;
+}

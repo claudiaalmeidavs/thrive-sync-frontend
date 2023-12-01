@@ -20,6 +20,7 @@ export default function ActivityPage () {
   }
   useEffect(() => {
     fetchActivities();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Function to get emoji based on activity status

@@ -1,6 +1,6 @@
 # Thrive Sync (Frontend)
 
-This repository is the frontend of Thrive Sync, an personal health app that helps users to create new healthy habits and track their progress.
+This repository is the frontend of Thrive Sync, a personal health app that helps users to create new healthy habits and track their progress.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

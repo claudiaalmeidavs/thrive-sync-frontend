@@ -36,6 +36,7 @@ export default function ActivityPage () {
       }
     };
 
+    // function to set the background image according to the category
     const getCategoryImage = (category) => {
       switch (category) {
         case "General":

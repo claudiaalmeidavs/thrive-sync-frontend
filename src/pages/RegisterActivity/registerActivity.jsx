@@ -93,8 +93,8 @@ export default function RegisterActivity () {
             onChange={handleChange}/>Nutrition
           </label>
             <label htmlFor="">
-            <input type="radio" name="activity_subject" value="Sleeping" checked={formData.activity_subject === "Sleeping"}
-            onChange={handleChange}/>Sleeping
+            <input type="radio" name="activity_subject" value="Sleep" checked={formData.activity_subject === "Sleep"}
+            onChange={handleChange}/>Sleep
           </label>
         </div>
         </div>

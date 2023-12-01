@@ -42,11 +42,11 @@ export default function RegisterActivity () {
           <div className="username">
             <div className="username-first-line">
               <label className="form-item" htmlFor="username">Username</label>
-              <h3 className="h3-text">John Doe</h3>
+              <h3 className="h3-text">Jane Doe</h3>
             </div>
             <div className="username-second-line">
               <label  htmlFor="email">Email</label>
-              <h3 className="h3-text">JohnDoe@email.com</h3>
+              <h3 className="h3-text">JaneDoe@email.com</h3>
             </div>
           </div>
           <div className="form-section-title">

@@ -74,7 +74,9 @@
     height: 100px;
     border-radius: 20px;
     padding: 10px;
-    font-size: 100%;
+    font-size: 16px;
+    font-family: var(--main-font);
+    color: var(--color1);
     resize: none;
     border: none;
 }
@@ -84,7 +86,9 @@
     height: 25px;
     border-radius: 10px;
     padding: 10px;
-    font-size: 100%;
+    font-size: 16px;
+    font-family: var(--main-font);
+    color: var(--color1);
     resize: none;
     border: none;
 }
